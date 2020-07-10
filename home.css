@@ -1,0 +1,216 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(photo/279307.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.todo{
+    width: 380px;
+    height: 670px;
+    background: #000;
+    color: #fff;
+    top: 56%;
+    left: 85%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    background: transparent;
+    border-left: 5px dodgerblue groove;
+    border-right: 5px dodgerblue groove;
+    border-top: 5px dodgerblue groove;
+}
+.outtime{
+    width: 680px;
+    height: 350px;
+    top: 78%;
+    left: 23%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-left: 5px dodgerblue groove;
+    border-right: 5px dodgerblue groove;
+    border-top: 5px dodgerblue groove;
+}
+.scroll{
+    width: 1080px;
+    height: 315px;
+    top: 20%;
+    left: -155%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-bottom: 5px dodgerblue groove;
+    border-right: 5px dodgerblue groove;
+    border-top: 5px dodgerblue groove;
+}
+.images{
+    width: 370px;
+    height: 325px;
+    top: 72%;
+    left: -57%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: 5px dodgerblue groove;
+}
+.time p1{
+    color: #fff;
+    top: 65%;
+    left: 26%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 100px;
+    color: dodgerblue;
+}
+.time p11{
+    color: #fff;
+    top: 65%;
+    left: 11%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 100px;
+    color: dodgerblue;
+}
+.time p2{
+    color: #fff;
+    top: 65%;
+    left: 14.5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 100px;
+    color: dodgerblue;
+}
+.time p21{
+    color: #fff;
+    top: 65%;
+    left: 17.5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 100px;
+    color: dodgerblue;
+}
+.time p3{
+    color: #fff;
+    top: 65%;
+    left: 7%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 100px;
+    color: dodgerblue;
+}
+.time p4{
+    color: #fff;
+    top: 85%;
+    left: 7.5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 180px;
+    color: dodgerblue;
+}
+.time p41{
+    color: #fff;
+    top: 85%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 180px;
+    color: dodgerblue;
+}
+.time p5{
+    color: #fff;
+    top: 85%;
+    left: 23%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 180px;
+    color: dodgerblue;
+}
+.time p51{
+    color: #fff;
+    top: 85%;
+    left: 30.5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 180px;
+    color: dodgerblue;
+}
+.time p6{
+    color: #fff;
+    top: 85%;
+    left: 38.5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family:fantasy;
+    font-size: 180px;
+    color: dodgerblue;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 45px;
+    color: dodgerblue;
+}
+.todo p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.todo input{
+    width:100%;
+    margin-bottom: 20px;
+}
+.todo input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.todo input[type="submit"]{
+    border: none;
+    background: dodgerblue;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+.todo ol{
+    list-style: square;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    background: transparent;
+    border-style: groove;
+    border-color: dodgerblue;
+    padding: 20px;
+}
+.todo li{
+    background-color : #f4f4f4;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+}
+.todo ol li {
+  background: transparent;
+  padding: 5px;
+  margin-left: 35px;
+}
+.todo li img{
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}

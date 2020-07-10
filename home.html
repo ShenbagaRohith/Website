@@ -1,0 +1,83 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="home.css">
+        <script type="text/javascript"> 
+        var count = 0;
+        function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
+        }
+        function display_ct() {
+        var x = new Date()
+        document.getElementById('year').innerHTML = x.getFullYear();
+        document.getElementById('month').innerHTML = x.getMonth();
+        document.getElementById('date').innerHTML = x.getDate();
+        document.getElementById('hour').innerHTML = x.getHours();
+        document.getElementById('min').innerHTML = x.getMinutes();
+        document.getElementById('sec').innerHTML = x.getSeconds();
+        var h = new Date().getHours();
+        var value = new Date().getSeconds();
+            if(h<12 && h>4){
+                document.getElementById('img').src="photo/1morning.jpg";
+            }else{
+                if(h<17){
+                    document.getElementById('img').src="photo/1afternoon.jpg";
+                }else{
+                    if(h<20){
+                        document.getElementById('img').src="photo/1evening.jpg";
+                    }else{
+                        document.getElementById('img').src="photo/1night.jpg";
+                    }
+                }
+            }
+        var images = new Array(	"photo/image1.jpg","photo/image2.jpg","photo/image3.jpg","photo/image4.jpg","photo/image5.jpg","photo/image6.jpg","photo/image7.jpg","photo/image8.pnf","photo/image9.jpg","photo/image10.png");
+        if(value%10==0)
+        {
+            document.getElementById("imgscroll").src = images[count%10];
+            count+=1;
+        }
+        display_c();
+        }
+        </script>
+    </head>
+<body onload="display_c()">
+    <div class="outtime"></div>
+    <div class="time">
+        <p1 id="year"></p1>
+        <p11>.</p11>
+        <p2 id="month"></p2>
+        <p21>.</p21>
+        <p3 id="date"></p3>
+        <p4 id="hour"></p4>
+        <p41>:</p41>
+        <p5 id="min"></p5>
+        <p51>:</p51>
+        <p6 id="sec"></p6>
+    </div>
+    <div id="tt" accesskey="" class="todo" ng-app="list" ng-controller="listcontrol">
+    <h1>Todo</h1>
+    <img id="img" class="images">
+    <img id="imgscroll" src="photo/image10.png" class="scroll">
+    <form>
+        <div class="addlist">
+        <p>New Task</p>
+        <input type="text" ng-model="newlist" class="addtext" placeholder="Enter Here...">
+        <input type="submit" ng-click="pushlist()" name="" value="ADD">
+        </div>
+        <ol>
+            <li ng-repeat="i in lists">
+                {{i}}
+                <img ng-click="poplist($index)" src="photo/icon.png"  width="20" height="20">
+            </li>
+
+        </ol>
+    </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="angularhome.js"></script>
+
+</body>
+</html>
