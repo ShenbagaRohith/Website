@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(279307.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.logincenter{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 40%;
+    left: 85%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    background: transparent;
+    border: 5px #01215c;
+    border-style: groove;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.logincenter p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.logincenter input{
+    width:100%;
+    margin-bottom: 20px;
+}
+.logincenter input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.logincenter input[type="submit"]{
+    border: none;
+    background: blue;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+.logincenter input[type="submit"]:hover{
+    cursor: pointer;
+    background: darkblue;
+    color: #fff;
+}
+.logincenter a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.logincenter a:hover{
+    color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
